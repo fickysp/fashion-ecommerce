@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,5 +30,6 @@ Route::post('register', [AuthController::class, 'register']);
 
 //admin
 Route::get('admin', [AdminController::class, 'index'])->name('admin');
+Route::resource('product', ProductController::class);
 //user
 Route::get('user', [UserController::class, 'index'])->name('user');
