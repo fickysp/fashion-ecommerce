@@ -57,7 +57,7 @@
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Piqué Biker Jacket</h6>
+                        <h6>Piqué Jacket</h6>
                         <a href="#" class="add-cart">+ Add To Cart</a>
                         <div class="rating">
                             <i class="fa fa-star-o"></i>
