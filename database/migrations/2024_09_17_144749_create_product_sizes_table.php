@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('product_sizes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('product_id')->constrained('products')->onDelete('cascade'); // relasi ke tabel products
-            $table->string('size'); // Ukuran produk, misal: 'M', 'L', 'XL'
-            $table->integer('stock'); // Stok untuk ukuran tertentu
+            $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
+            $table->enum('size', ['S', 'M', 'L', 'XL']); // Contoh nilai enum
+            $table->integer('stock');
             $table->timestamps();
         });
+
     }
 
 
